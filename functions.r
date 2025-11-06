@@ -1,7 +1,8 @@
 library(httr)
 library(rvest)
-library(tidyverse,
-        quietly = T)
+library(dplyr)
+library(openxlsx)
+library(stringr)
 
 get_mascot_links_from_html <- function(webpage_html) {
   

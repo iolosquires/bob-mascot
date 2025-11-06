@@ -10,8 +10,8 @@ This script accesses the Mascot search log. It then saves links to the searches 
 
 ### Installing
 
-* Install R
-* Add Rscript.exe to Path.
+* Install R (version 4.5.2) and Rstudio
+* Add the location of Rscript.exe to config.txt. If there are any spaces in the location, put " around the location.
 
 ### Executing program
 

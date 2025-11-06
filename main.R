@@ -1,9 +1,3 @@
-library(httr)
-library(rvest)
-library(tidyverse,
-        quietly = T)
-library(openxlsx)
-
 source("functions.r")
 
 args <- commandArgs(trailingOnly = TRUE)
