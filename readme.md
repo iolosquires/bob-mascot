@@ -29,5 +29,4 @@ Iolo Squires
 
 ## Acknowledgments
 
-Inspiration, code snippets, etc.
 * [awesome-readme](https://github.com/matiassingers/awesome-readme)
