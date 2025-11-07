@@ -22,8 +22,7 @@ get_mascot_links_from_html <- function(webpage_html) {
   return(link_df)
 }
 
-format_mascot_log <- function(data_tables,
-                              user) {
+format_mascot_log <- function(data_tables) {
   mascot_log <- data_tables[[2]] |>
     as_tibble()
   
@@ -31,7 +30,7 @@ format_mascot_log <- function(data_tables,
   mascot_log <- mascot_log[-c(1:4),]
   
   mascot_bob <- mascot_log |>
-    filter(`User Name` == user) |>
+    filter(`User Name` %in% c("Discoverer_isquires001", "Discoverer_RGourlay","Discoverer_RSoares")) |>
     mutate(name = str_extract(`Peak list data file`,"RS_.*?(?=\\.raw)"))
   
   return(mascot_bob)
