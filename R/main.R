@@ -1,4 +1,4 @@
-source("functions.r")
+source("Z:/proteinchem/IoloSquires/00-Projects/OwnProjects/bob-mascot/R/functions.R")
 
 args <- commandArgs(trailingOnly = TRUE)
 
@@ -7,7 +7,9 @@ if (length(args) < 2) {
 }
 
 username <- args[1]
+
 password <- args[2]
+
 
 cat("Username:", username, "\n")
 
@@ -21,8 +23,7 @@ webpage_html <- get_html_from_mascot(my_username = username,
 data_tables <- get_data_tables(webpage_html)
   
 sample_links <- get_mascot_links_from_html (webpage_html)
-mascot_bob <- format_mascot_log (data_tables = data_tables,
-                                 user = paste0("Discoverer_", username)) 
+mascot_bob <- format_mascot_log (data_tables = data_tables) 
 mascot_bob <- mascot_bob |>
   left_join(sample_links,
             by = join_by(`Job#` == mascot_number))

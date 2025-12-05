@@ -14,7 +14,7 @@ set /p rscript_path=< config.txt
 echo Using Rscript at: %rscript_path%
 
 :: Call R script, passing username and password as arguments
-%rscript_path% "R/main.R" "%USERNAME%" "%PASSWORD%"
+%rscript_path% "Z:\proteinchem\IoloSquires\00-Projects\OwnProjects\bob-mascot\R\main.R" "%USERNAME%" "%PASSWORD%"
 
 endlocal
 pause

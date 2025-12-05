@@ -10,7 +10,7 @@ set /p rscript_path=< config.txt
 echo Using Rscript at: %rscript_path%
 
 ::Run setup script
-%rscript_path% "R/setup.R"
+%rscript_path% "Z:\proteinchem\IoloSquires\00-Projects\OwnProjects\bob-mascot\R\setup.R"
 
 endlocal
 pause
